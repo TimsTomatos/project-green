@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Project Green</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  </head>
+
+  <body>
+
+        <div id = "main">
+          <div class="homeHeader">
+              <h1>Project</h1>
+              <img src="../images/logo.png" alt="OOGA BOOGA CHA">
+              <h1>Green</h1>
+
+           
+
+              
+          </div>
+
+            <!--
+          <div id="account">
+              <input type="text" id="user" placeholder="username">
+              <input type="text" name="" id="pass" placeholder="password">
+              <button onclick="signUp()">Sign Up</button>
+
+
+
+              <input type="text" id="user1" placeholder="username">
+              <input type="text" name="" id="pass1" placeholder="password">
+              <button onclick="signIn()">Login In</button>
+              <button onclick="signOut()">Log Out</button> 
+          </div>
+        -->
+          <div id="linkContainer">
+              <a href="./report.htm">Upload A Report</a>
+              <a href="./map.htm">See Full Map</a>
+              <a href="./edit.htm">Edit A Existing Pin</a>
+          </div>
+          
+          <div id="parallax">
+            <div id="slogan">
+              <h2>Helping the Enviroment</h2>
+              <h3>The Efficient Way</h3>
+            </div>
+          </div>
+
+          <div class="content">
+            <h1>Reporting Made Easy</h1>
+            <div id="previewPin">
+              <div class="collection">
+                <img src="../images/template/marker.png" alt="a google marker">
+                <p>Waipahu,HI</p>
+              </div>
+
+              <div class="collection">
+                  <img src="../images/template/marker.png" alt="a google marker">
+                  <p>Waikiki,HI</p>
+              </div>
+
+              <div class="collection">
+                  <img src="../images/template/marker.png" alt="a google marker">
+                  <p>Ewa Beach,HI</p>
+              </div>
+
+            </div>
+            <h2>Easily Report Trash Anywhere on Hawaii</h2>
+          </div>
+          <hr class="line">
+          <div id="mapContainer">
+              <p onclick="showMap(showStat)" id="mapButton">^</p>
+              <div id = "map"></div>
+          </div>
+        </div>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="../js/home.js"></script>
+        
+<script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAMbrdiuW5Faw-0eZ8RE5SkhcWrE6L0Y_g",
+    authDomain: "angular-vortex-217203.firebaseapp.com",
+    databaseURL: "https://angular-vortex-217203.firebaseio.com",
+    projectId: "angular-vortex-217203",
+    storageBucket: "angular-vortex-217203.appspot.com",
+    messagingSenderId: "289057629669"
+  };
+  firebase.initializeApp(config);
+
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+
+</script>
+<script src="../js/auth.js"></script>
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmgs0P16x06Y1uvvjbFBTM_X58eCEyAcE&callback=initMap&libraries=visualization" async></script>
+  </body>
+</html>

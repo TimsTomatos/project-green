@@ -1,0 +1,158 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgb(250,250,250);
+    position: relative;
+}
+
+/* header + linkCotainer = 27 */
+
+.homeHeader {
+    display: inline-block;
+    height: 13%;
+    width: 95%;
+    padding: 1% 2.5%;
+    justify-content: space-evenly;
+}
+
+#logo {
+    display: inline-flex;
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#logo:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo > img {
+    height: 50%;
+    display: inline-block;
+    margin: auto 0;
+}
+
+#logo > h1 {
+    display: inline-block;
+    margin: auto 0;
+}
+
+#linkContainer {
+    display: inline-flex;
+    padding: 0 1%;
+    width: 72%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#linkContainer > a {
+    font-size: 1.5rem;
+    color: #6a6a65;
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #16a6b6;
+    margin: auto 0.5rem;
+    transition: all 0.2s linear;
+}
+
+#linkContainer > a:hover {
+    color: #16a6b6;
+}
+
+#linkContainer > a:nth-child(2) {
+    color: #16a6b6;
+}
+
+
+
+/*Side Bar Stuff*/
+#sideBar {
+    width: 20%;
+    height: 80%;
+    position: absolute;
+    border: 2px solid black;
+}
+
+.content  {
+    border: solid 2px black;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: gray;
+}
+
+
+#t {
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+/* main map stuff */
+
+#map {
+    height: 80.5%;
+
+
+    width: 80%;
+    left: 20%;
+}
+
+.cardContainer {
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    justify-content: center;
+    top: 0%;
+}
+
+.card {
+    display: inline-flex;
+    background: white;
+    width: 25rem;
+    height: 30rem;
+    flex-direction: column;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.type {
+    text-align: center;
+    padding: 1rem;
+    background-color: gray;
+    margin: 0;
+}
+
+.comment {
+    text-align: center;
+}
+
+.close  {
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    left: 53%;
+    top: 22%;
+    background: transparent;
+    border: transparent;
+    color: red;
+}

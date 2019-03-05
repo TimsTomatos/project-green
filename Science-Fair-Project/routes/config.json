@@ -1,0 +1,8 @@
+{
+    "table": "pins", 
+    "host": "jrdevleague.cb9co1xxtizk.us-west-2.rds.amazonaws.com",
+    "database": "project_green",
+    "user": "whs_tim",
+    "password": "w00my",
+    "port": "5432"
+}

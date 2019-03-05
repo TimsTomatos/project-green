@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/map.css">
+</head>
+<body>
+
+    <div id="root">
+        <div class="homeHeader">
+            <a id="logo" href="../html/index.htm">
+                <img src="../images/logo.png" alt="OOGA BOOGA CHA">
+                <h1>Project Green</h1>
+            </a>
+        
+            <div id="linkContainer">
+                <a href="./report.htm">Upload A Report</a>
+                <a href="./report.htm">See Full Map</a>
+                <a href="./edit.htm">Edit A Existing Pin</a>
+            </div>
+        
+        </div>
+
+        
+            <div id="sideBar">
+                <h1 id="t">Recent Discoveries</h1>
+                <div id="content"></div>
+            </div>
+
+            <div id="map">
+
+            </div>
+        
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/map.js"></script>
+    <script src="../js/test.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCLCh0dX81ASRsu9OcFkWI__iMxcgaESg&callback=initMap&libraries=visualization" async defer></script>
+</body>
+</html>

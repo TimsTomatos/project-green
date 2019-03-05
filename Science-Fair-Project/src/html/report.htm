@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/inputUpload.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+                    <div class="homeHeader">
+                        <a id="logo" href="../html/index.htm">
+                            <img src="../images/logo.png" alt="OOGA BOOGA CHA">
+                            <h1>Project Green</h1>
+                        </a>
+                    
+                        <div id="linkContainer">
+                            <a href="./report.htm">Upload A Report</a>
+                            <a href="./report.htm">See Full Map</a>
+                            <a href="./edit.htm">Edit A Existing Pin</a>
+                        </div>
+                    
+        
+        <div id="inputStuff">
+                <select id="type">
+                    <option value="Plastic Bottle">Plastic Bottle</option>
+                    <option value="Plastic Bag">Plastic Bag</option>
+                </select>
+                <input type="text" placeholder="comment" id="comment" />
+                <input type="file" id="sumbittedImage">
+                <button onclick="SubmitForm(); uploadFile();">submit</button>
+        </div>
+    </div>
+</div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+    <script src="../js/report.js"></script>
+    <script src="../js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, html, #root {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: rgb(250,250,250);
+    position: relative;
+}
+
+/* header + linkCotainer = 27 */
+
+.homeHeader {
+    display: inline-block;
+    height: 13%;
+    width: 95%;
+    padding: 1% 2.5%;
+    justify-content: space-evenly;
+}
+
+#logo {
+    display: inline-flex;
+    width: 25%;
+    height: 100%;
+    text-decoration: none;
+}
+
+#logo:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#logo > img {
+    height: 50%;
+    display: inline-block;
+    margin: auto 0;
+}
+
+#logo > h1 {
+    display: inline-block;
+    margin: auto 0;
+}
+
+#linkContainer {
+    display: inline-flex;
+    padding: 0 1%;
+    width: 72%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#linkContainer > a {
+    font-size: 1.5rem;
+    color: #6a6a65;
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #16a6b6;
+    margin: auto 0.5rem;
+    transition: all 0.2s linear;
+}
+
+#linkContainer > a:hover {
+    color: #16a6b6;
+}
+
+#linkContainer > a:nth-child(3) {
+    color: #16a6b6;
+}
+
+/* input stuff */
+
+#inputStuff {
+    width: 100%;
+    display: flex;
+    height: -webkit-fill-available;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+input {
+    height: 2rem;
+    width: 50%;
+    margin: 0 auto;
+}
+
+button {
+    width: 50%;
+    height: 2rem;
+    margin: 0 auto;
+}
